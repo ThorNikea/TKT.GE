@@ -11,8 +11,8 @@ public class LoginPageTest extends ChromeRunner {
     @Test
     public void Logintest() {
         LoginPageSteps loginPageSteps = new LoginPageSteps();
-        loginPageSteps.authorizationBtn()
-                .emailInput(email)
+        loginPageSteps.AuthorizationBtn()
+                .EmailInput(email)
                 .PasswordInput(password)
                 .LoginBtn();
         Assert.assertTrue(LoginPageSteps.loginSuccess.is(Condition.visible));

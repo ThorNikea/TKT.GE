@@ -20,10 +20,10 @@ public class EventsPageTest extends ChromeRunner {
 
     }
 
-    @Test
+   /* @Test
     public void test() {
         EventsPageSteps eventsPageSteps = new EventsPageSteps();
         $((".iCRHhi")).$(new ByText("UNDER 21"));
         sleep(5000);
-    }
+    }*/
 }

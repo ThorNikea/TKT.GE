@@ -3,11 +3,11 @@ package StepObject;
 import PageObject.LoginPage;
 
 public class LoginPageSteps extends LoginPage {
-    public LoginPageSteps  authorizationBtn () {
+    public LoginPageSteps  AuthorizationBtn () {
         authorizationBtn.click();
         return this;
     }
-    public LoginPageSteps emailInput(String email) {
+    public LoginPageSteps EmailInput(String email) {
         emailinput.setValue(email);
         return this;
     }
@@ -17,7 +17,7 @@ public class LoginPageSteps extends LoginPage {
     }
 
     public LoginPageSteps LoginBtn() {
-        LoginBtn.click();
+        loginBtn.click();
 
         return this;
     }
