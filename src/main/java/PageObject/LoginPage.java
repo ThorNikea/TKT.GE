@@ -7,9 +7,9 @@ import static com.codeborne.selenide.Selenide.$;
 
 public class LoginPage {
     public SelenideElement
-            authorizationBtn = $("#continueButton2");
-    public SelenideElement emailinput = $(byClassName("style__InputElement-gqso6m-2"),0);
-    public SelenideElement passwordinput = $(byClassName("style__InputElement-gqso6m-2"),1);
-    public SelenideElement loginBtn = $(byText("შესვლა"));
-    public static SelenideElement loginSuccess = $(byClassName("_s_btn")).$(byText("შევსება"));
+            authorizationBtn = $("#continueButton2"),
+            emailinput = $(byClassName("style__InputElement-gqso6m-2"), 0),
+            passwordinput = $(byClassName("style__InputElement-gqso6m-2"), 1),
+            loginBtn = $(byText("შესვლა"));
+    public static SelenideElement loginSuccess = $(byClassName("profile__DropdownClickArea-sc-1ba70ir-0"));
 }

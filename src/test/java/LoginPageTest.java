@@ -15,7 +15,7 @@ public class LoginPageTest extends ChromeRunner {
                 .EmailInput(email)
                 .PasswordInput(password)
                 .LoginBtn();
-        Assert.assertTrue(LoginPageSteps.loginSuccess.is(Condition.visible));
+        Assert.assertTrue(loginPageSteps.loginSuccess.is(Condition.visible), "ავტორიზაციის შემოწმება");
 
 
     }

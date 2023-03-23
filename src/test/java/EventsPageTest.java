@@ -1,29 +1,22 @@
 import StepObject.EventsPageSteps;
-import StepObject.LoginPageSteps;
 import Utils.ChromeRunner;
-import com.codeborne.selenide.selector.ByText;
+import com.codeborne.selenide.Condition;
+import org.testng.Assert;
 import org.testng.annotations.Test;
-
-import java.time.Duration;
-
-import static DataObject.LoginPageData.email;
-import static DataObject.LoginPageData.password;
-import static com.codeborne.selenide.Selenide.$;
-import static com.codeborne.selenide.Selenide.sleep;
 
 public class EventsPageTest extends ChromeRunner {
     @Test
     public void EventsPage() {
         EventsPageSteps eventsPageSteps = new EventsPageSteps();
-        eventsPageSteps.Under21();
-
+        eventsPageSteps.Under21()
+                .Concerts()
+                .Transport()
+                .Theatre()
+                .Opera()
+                .Sport()
+                .Other();
+        Assert.assertTrue(EventsPageSteps.forassertother.is(Condition.visible));
 
     }
 
-   /* @Test
-    public void test() {
-        EventsPageSteps eventsPageSteps = new EventsPageSteps();
-        $((".iCRHhi")).$(new ByText("UNDER 21"));
-        sleep(5000);
-    }*/
 }

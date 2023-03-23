@@ -1,16 +1,21 @@
 package PageObject;
 
-import com.codeborne.selenide.*;
-import com.codeborne.selenide.selector.*;
-import org.openqa.selenium.*;
+import com.codeborne.selenide.SelenideElement;
 
-import static com.codeborne.selenide.Selectors.*;
-import static com.codeborne.selenide.Selenide.*;
+import static com.codeborne.selenide.Selectors.byClassName;
+import static com.codeborne.selenide.Selectors.byText;
+import static com.codeborne.selenide.Selenide.$;
 
 public class EventsPage {
     public SelenideElement
-            Under21 = $(".iCRHhi").$(byText("UNDER 21")),
-            Concerts = $(".iCRHhi").$(new ByText("ღონისძიებები"));
+            under21 = $(byClassName("style__BurgerDropdownButton-ndz9f1-1"), 1),
+            concerts = $(byClassName("icon-concerts")),
+            transport = $(byClassName("icon-transport")),
+            theatre = $(byClassName("icon-theatre")),
+            opera = $(byClassName("icon-opera")),
+            sport = $(byClassName("icon-sport")),
+            other = $(byClassName("icon-other"));
+    public static SelenideElement forassertother = $(byText("სხვა"));
 
 }
 

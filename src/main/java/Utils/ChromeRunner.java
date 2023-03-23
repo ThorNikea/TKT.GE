@@ -7,12 +7,12 @@ import org.testng.annotations.BeforeMethod;
 import static com.codeborne.selenide.Selenide.*;
 
 public class ChromeRunner {
-    @BeforeMethod
+    @BeforeMethod (description = "configure browser before tests")
     public void setUp(){
         open("https://tkt.ge/");
         System.setProperty("selenide.browserSize","1980x1080");
     }
-    @AfterMethod
+    @AfterMethod (description = "Close browser and clear cookies")
     public void tearDown(){
         Selenide.clearBrowserCookies();
         Selenide.clearBrowserLocalStorage();
