@@ -20,6 +20,6 @@ public class TnetPage {
             saba = $((".styles_listingItemContainer__20CbL"), 8);
     public ElementsCollection TnetLoop = $$(".styles_listingItemContainer__20CbL");
     public static SelenideElement
-            sabapage =  $(".gSlider-Title");
+            sabapage = $(".gSlider-Title");
 
 }

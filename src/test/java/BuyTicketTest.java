@@ -1,6 +1,9 @@
 import StepObject.BuyTicketSteps;
 import Utils.ChromeRunner;
 import com.codeborne.selenide.Condition;
+import io.qameta.allure.Description;
+import io.qameta.allure.Severity;
+import io.qameta.allure.SeverityLevel;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
@@ -9,6 +12,8 @@ import static DataObject.BuyTicketData.*;
 public class BuyTicketTest extends ChromeRunner {
 
     @Test
+    @Description("Bob Sinclar Ticket Buy")
+    @Severity(SeverityLevel.CRITICAL)
     public void Buyticket() {
         BuyTicketSteps buyTicketSteps = new BuyTicketSteps();
         buyTicketSteps.searchbarinput.setValue(buyticketinput).pressEnter();

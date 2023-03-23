@@ -2,5 +2,4 @@
 target
 .idea
 build
-allure-result
-
+allure-results
